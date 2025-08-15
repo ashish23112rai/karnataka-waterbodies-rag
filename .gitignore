@@ -14,5 +14,4 @@ chromadb_data/
 *.tiff
 *.zip
 *.csv
-*.geojson
 *.sqlite
