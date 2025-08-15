@@ -35,7 +35,8 @@ st.pyplot(fig)
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Initialize Chroma client and collection (create if not exists)
-client = chromadb.PersistentClient(path="./chromadb_data")
+#client = chromadb.PersistentClient(path="./chromadb_data")
+client = chromadb.Client()
 collection = client.get_or_create_collection(name="karnataka_waterbodies")
 
 # User input for query
