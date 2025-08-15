@@ -6,7 +6,8 @@ import chromadb
 gdf = gpd.read_file("data/DWA Waterbodies Ph1 for Karnataka.geojson")
 
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
-client = chromadb.PersistentClient(path="./chromadb_data")
+#client = chromadb.PersistentClient(path="./chromadb_data")
+client = chromadb.Client()
 collection = client.get_or_create_collection(name="karnataka_waterbodies")
 
 texts = []
