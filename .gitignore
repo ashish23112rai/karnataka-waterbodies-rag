@@ -1,0 +1,18 @@
+# Python environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+chromadb_data/
+*.sqlite
+
+
+# Data that is too large for repo (if applicable)
+chromadb_data/
+*.tif
+*.tiff
+*.zip
+*.csv
+*.geojson
+*.sqlite
